@@ -5,7 +5,14 @@
       <span class="col-count">{{ tasks.length }}</span>
     </div>
     <div class="col-body">
-      <TaskCard v-for="task in tasks" :key="task.id" :task="task" @click="$emit('task-click', task)" />
+      <TaskCard
+        v-for="task in tasks"
+        :key="task.id"
+        :task="task"
+        :allStatuses="statusList"
+        @click="$emit('task-click', task)"
+        @move="(newStatus) => $emit('move-task', { task, newStatus })"
+      />
       <div v-if="tasks.length === 0" class="col-empty">Aucune tâche</div>
     </div>
   </div>
@@ -21,7 +28,12 @@ export default {
     tasks: { type: Array, default: () => [] },
     color: { type: String, default: '#2b7fff' },
   },
-  emits: ['task-click'],
+  emits: ['task-click', 'move-task'],
+  data() {
+    return {
+      statusList: ['À faire', 'En cours', 'Bloqué', 'Terminé'],
+    }
+  },
 }
 </script>
 
