@@ -14,6 +14,7 @@
 
 <script>
 import axios from 'axios'
+import { API_BASE } from '../api.js'
 import ProjectCard from '../components/ProjectCard.vue'
 export default {
   name: 'Projects',
@@ -21,7 +22,7 @@ export default {
   data() { return { projects: [], loading: true, error: false } },
   async created() {
     try {
-      const res = await axios.get('http://localhost:3000/projects')
+      const res = await axios.get(`${API_BASE}/projects`)
       this.projects = res.data
     } catch (e) { this.error = true } finally { this.loading = false }
   },

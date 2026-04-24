@@ -55,6 +55,7 @@
 
 <script>
 import axios from 'axios'
+import { API_BASE } from '../api.js'
 export default {
   name: 'TaskForm',
   props: { projectId: { type: Number, required: true } },
@@ -69,7 +70,7 @@ export default {
   },
   async created() {
     try {
-      const res = await axios.get('http://localhost:3000/users')
+      const res = await axios.get(`${API_BASE}/users`)
       this.users = res.data
     } catch (e) { console.error(e) }
   },
@@ -83,7 +84,7 @@ export default {
       if (!this.validate()) return
       this.loading = true
       try {
-        const res = await axios.post('http://localhost:3000/tasks', { ...this.form, projectId: this.projectId })
+        const res = await axios.post(`${API_BASE}/tasks`, { ...this.form, projectId: this.projectId })
         this.$emit('task-added', res.data)
         this.form = { title: '', description: '', assignee: '', priority: 'Moyenne', status: 'À faire', deadline: '' }
         this.errors = {}
