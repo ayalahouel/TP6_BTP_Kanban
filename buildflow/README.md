@@ -56,4 +56,25 @@ npm run dev
 
 ---
 
-## 🗂️ Arborescence
+## 🗂️ Screenshots
+<img width="1436" height="358" alt="image" src="https://github.com/user-attachments/assets/1cdb1200-f817-4fc4-a96c-c49f18e6d559" />
+
+<img width="1038" height="402" alt="image" src="https://github.com/user-attachments/assets/559c9625-8fb5-45f5-a0d7-8346ddb10c4a" />
+
+<img width="999" height="338" alt="image" src="https://github.com/user-attachments/assets/a2d60942-3dd4-47d7-b964-e19a80e3c177" />
+
+<img width="428" height="362" alt="image" src="https://github.com/user-attachments/assets/b89dc5d7-54f2-4622-b8af-26493ddb7389" />
+
+<img width="1026" height="573" alt="image" src="https://github.com/user-attachments/assets/7b322e73-4609-4754-9dd7-e0f3fcb8d8bb" />
+
+<img width="1031" height="364" alt="image" src="https://github.com/user-attachments/assets/e55452b2-18d4-4080-b565-f55898b50e9d" />
+
+<img width="406" height="533" alt="image" src="https://github.com/user-attachments/assets/3c7fa33c-1ab6-43e8-9ea4-46127cbf5cf4" />
+
+<img width="1435" height="803" alt="image" src="https://github.com/user-attachments/assets/b059dc2c-54bc-4a0c-82de-f7e0c7d33506" />
+
+
+
+
+
+
